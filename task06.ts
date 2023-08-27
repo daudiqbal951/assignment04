@@ -6,7 +6,10 @@ var index:number=0
 while(index<numberArray.length){
     if(numberArray[index]<0){
         numberArray.splice(index,1)
+        i--
     }
-    index=index+1
+    else{
+        index=index+1
+    }
 }
 console.log(numberArray)
